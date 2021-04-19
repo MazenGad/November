@@ -1,0 +1,710 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0px;
+
+}
+
+header
+{
+    width: 100%;
+    background: rgb(0, 9, 24);
+    height: 63px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 9;
+    
+
+}   
+
+header div:first-child
+{
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: absolute;
+    bottom: -8px;
+    margin-left: 105px;
+}
+
+
+
+header div:nth-child(2)
+{
+    float: right;
+    width: 800px;
+
+}
+
+
+header h1:only-of-type
+{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+header h1 span
+{
+    color: rgb(216, 132, 35);
+}
+
+header ul:only-of-type
+{
+    list-style: none;
+}
+
+header ul li
+{
+    cursor: pointer;
+    display: inline;
+    padding: 30px  42px  22px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+header ul li:hover
+{
+    background-color: rgba(61, 61, 105, 0.589);
+    border-bottom: solid 2px orange;
+}
+
+header ul li:first-of-type
+{
+    background-color: rgba(61, 61, 105, 0.589);
+    border-bottom: solid 2px orange;
+
+}
+
+/*-----------------------------------------------------*/
+nav
+{
+    z-index: 1;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d ;
+    background-size: cover;
+}
+nav div:first-child
+{
+    width: 100%;
+    height: 750px;
+    background-color: paleturquoise;
+    border-bottom:70px solid rgba(201, 199, 199, 0.863);
+    
+}
+
+nav div [alt="background"]
+{
+    width: 100%;
+    height: 758px;
+    position: absolute;
+}
+
+nav  [alt="image"]
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+nav .image
+{
+    position: absolute;
+    top: 250px;
+    right: 120px;
+    width: 90%;
+}
+nav .image h1
+{
+    position: absolute;
+    left: 100px;
+    margin-top: 80px; 
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+nav .image .MOBILE
+{
+    color: orange;
+    font-weight: 600;
+
+}
+nav .image p
+{
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    font-size: 19px;
+    width: 350px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #fff;
+    line-height: 23px;
+
+}
+
+nav .image a:only-of-type
+{
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    padding: 12px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 550;
+
+}
+
+nav .image a:only-of-type:hover
+{
+    transition: all  0.4s ease-in-out;
+    background-color: rgb(230, 120, 17);
+}
+
+
+nav .about
+{
+    margin-top: 30px;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+}
+
+nav .about h1 
+{
+    font-size: 52px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.4px;
+    margin: 20px auto;
+}
+
+nav .about p
+{
+    padding: 0px 50px;
+    font-size: 18px;
+    color: rgb(185, 185, 185);
+    margin-bottom: 40px;
+}
+
+nav .about .s
+{
+    border-bottom: 2px solid orange;
+    width: 280px;
+    display: block;
+    margin: auto;
+}
+
+nav .about .img
+{
+    position: absolute;
+    display: block;
+}
+
+nav .about .img [alt="img1"] , [alt="img2"]
+{
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    padding: 5px;
+    border: 1px solid rgb(219, 219, 219); 
+    background-color: rgb(255, 255, 255); 
+    z-index: 2;
+    box-shadow: 0px 4px  10px rgba(212, 209, 209, 0.795);
+}
+
+nav .about .img [alt="img1"]
+{
+    z-index: 3;
+    top: 118px;
+    left: 48px;
+}
+
+nav .about .words
+{
+    position: absolute;
+    top: 330px;
+    right: 70px;
+    width: 55%;
+    text-align: left;
+
+}
+nav .about .words p:first-child
+{
+    line-height: 0px;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(0, 0, 0, 0.911);
+
+}
+
+nav .about .words .ab
+{
+    color: rgb(24, 103, 156);
+}
+
+.our
+{
+    height: 680px;
+    position: relative;
+}
+
+
+.our [alt="background"]
+{
+    width: 100%;
+    height: 750px;
+    position: absolute;
+}
+
+.our .text 
+{
+
+    position: absolute;
+    top: 90px;
+    left: 305px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.our .text p
+{
+
+    text-align: center;
+    font-size: 12px;
+    color: rgba(212, 209, 209, 0.795);
+}
+
+.our .text span:first-of-type
+{
+    padding-top: 20px;
+    border-bottom: 2px solid orange;
+    width: 280px;
+    display: block;
+    margin: auto;
+}
+
+.our .pics
+{
+    position: absolute;
+    top: 310px;
+    left: 300px;
+    height: 310px;
+}
+.our .pics div{
+    
+    margin-right: 20px;
+    width: 236px;
+    height: 355px;
+    display: inline-block;
+
+}
+.our .pics .div1
+{
+    margin-left:-90px ;
+    background-image: url('../img/x1.jpg');
+    position: relative;
+}
+.our .pics div:nth-child(2)
+{
+    background-image: url('../img/x2.jpg');
+    position: relative;
+
+}
+.our .pics div:nth-child(3)
+{
+    background-image: url('../img/x3.jpg');
+    position: relative;
+
+    }
+.our .pics div:nth-child(4)
+{
+    background-image: url('../img/x4.jpg');
+    position: relative;
+
+}
+
+.our .pics div div:hover
+{
+    opacity: 1;
+}
+
+.our .pics div div{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+
+.our .pics [alt="d"] , [alt="d2"] , [alt="c"] , [alt="s"]
+{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+
+.our .pics div:first-of-type span:first-of-type
+{   
+    position: absolute;
+    top: 185px;
+    left: 58px;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+}
+
+.our .pics div:nth-of-type(2) span:first-of-type
+{
+    position: absolute;
+    top: 185px;
+    left: 84px;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+}
+
+.our .pics div:nth-of-type(3) span:first-of-type
+{
+    position: absolute;
+    top: 185px;
+    left: 78px;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+}
+
+.our .pics div:nth-of-type(4) span:first-of-type
+{
+    position: absolute;
+    top: 185px;
+    left: 84px;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+.third
+{
+    background-color: rgba(230, 227, 230, 0.932);
+    width: 100%;
+    height: 870px;
+    padding: 190px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+}
+
+.third .w p{
+    
+    font-size: 17px;
+    color: rgba(129, 125, 125, 0.795);
+    width: 900px;
+    margin-left: 50px;
+}
+
+.third div .line
+{
+    border-bottom: 2px solid orange;
+    width: 280px;
+    display: inline-block;
+}
+
+.third .order
+{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+}
+
+.third .order div
+{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.third .order div div:first-child
+{
+    text-align: center;
+    line-height: 40px;    
+}
+
+
+
+.third .order div div:first-child p{
+    display: inline-block;
+    background-color: rgb(255, 123, 0);
+    transform: rotate(-90deg);
+    width: 100px;
+    line-height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-left: -20px;
+    font-family: Tahoma, Geneva, sans-serif	;
+    color: rgb(43, 42, 42);
+}
+
+.third .order div div:first-child div
+{
+    margin-left: -20px;
+    background-color: rgb(23, 24, 26);
+    color:rgb(255, 123, 0);
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+    width: 210px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 58px;
+    z-index: 4;
+
+}
+
+.third .order div ul 
+{
+
+    display: inline-block;
+    margin-left: -60px;
+    z-index: 2;
+    margin-top: 12px;
+}
+
+.third .order div li 
+{
+    display: inline-block;
+    margin: 7px;
+    padding-right: 20px;
+    border-right: 1px solid  rgba(98, 106, 114, 0.534);
+    font-weight: 600;
+    font-size: 15px;
+    word-break: break-word;
+    width: 21%;
+    color: rgba(98, 106, 114, 0.616);
+    line-height: 27px;
+}
+.third .order div li:first-child
+{
+    margin-left: 25px;
+
+}
+
+.third .order div li:last-child
+{
+    border-right: 0px solid;
+    margin-right: -22px;
+}
+
+.third .order div span
+{
+    background-color: rgb(23, 24, 26);
+    line-height: 20px;
+    color: snow;
+    padding: 30px;
+    font-size: 19px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.third .order div:hover div:first-of-type , .third .order div:hover  span
+{
+    transition: all 0.5s ease-in-out;
+    color: rgb(255, 249, 249);
+    background-color: rgb(255, 123, 0);
+}
+
+.third .order div:hover div:first-child p , 
+
+.third .order div:hover div 
+
+{
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(23, 24, 26);
+    color: snow;
+}
+
+.third .order div:hover li
+{
+    transition: all 0.5s ease-in-out;
+    color: rgba(236, 235, 235, 0.918);
+
+}
+
+
+.contact
+{
+    margin-top: -20px;
+    position: relative;
+    height: 900px;
+    background-image: url(../img/a0.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+    text-align: center;
+}
+
+.contact h1:first-of-type
+{
+    margin-left: 20px;
+    font-size: 50px;
+    color: lavenderblush;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.contact p:first-of-type
+{
+    width: 70%;
+    margin-left: 190px;
+    margin-top: -10px;
+    font-size: 15px;
+    color: rgba(255, 240, 245, 0.877);
+    font-family: 'Oswald', sans-serif;
+}
+
+.contact div:first-of-type .line
+{
+    margin-left: 20px;
+    border-bottom: 2px solid rgba(255, 166, 0, 0.897);
+    width: 280px;
+    display: inline-block;
+    margin-bottom: 50px ;
+    margin-top: 20px;
+
+}
+
+.contact .center .Form
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contact .center .Form div
+{
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.contact .center .Form .left input
+{
+    display: block;
+    margin: 10px 20px 20px 0px;
+    width: 530px;
+    padding: 14px;
+    border: none;
+}
+
+[placeholder="MESSAGE"]
+{
+    padding: 14px;
+    border: none;
+
+}
+
+[value="Send"]
+{
+    background-color: rgba(255, 123, 0, 0.884);
+    color: lightgoldenrodyellow;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.contact .center .Form .right 
+{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: -2px;
+
+}
+.contact .center .right h1
+{
+    color : rgb(253, 122, 0);
+    font-size: 38px;
+}
+
+.contact .center  .right  li
+{
+    color : rgba(255, 255, 255, 0.904);
+    font-size: 14px;
+    margin: 0px 0px 30px -35px;
+    list-style: none;
+}
+
+.contact .center  .right p
+{
+    line-height: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-left: 25px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.contact .center  .right p:first-of-type
+{
+
+    background-color: #3b5998	;
+
+}
+.contact .center  .right p:nth-of-type(2)
+{
+    background-color: #c4302b 	;
+
+}
+
+.contact .center  .right p:nth-of-type(3)
+{
+    font-size: 25px;
+    background-color: rgb(255, 255, 255) ;
+    color: cornflowerblue;
+}
+
+footer .Footer
+{
+    color: #a9abad;
+    font-size: 15px;
+    padding: 30px;
+    text-align: center;
+    height: 70px;
+    background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
